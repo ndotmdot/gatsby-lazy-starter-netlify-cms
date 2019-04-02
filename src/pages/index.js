@@ -27,5 +27,17 @@ export const query = graphql`
         title
       }
     }
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            description
+            image
+          }
+        }
+      }
+    }
   }
 `
