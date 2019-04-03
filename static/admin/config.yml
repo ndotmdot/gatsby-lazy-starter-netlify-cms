@@ -23,3 +23,26 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Hero Image", name: "hero-image", widget: "image"}
           - { label: "Body", name: "body", widget: "markdown" }
+   - name: pages
+    label: pages
+    files:
+    - name: home-page
+      label: "Home Page"
+      file: static/pages/home-page.md
+      fields:
+      - name: name
+        widget: hidden
+      - name: projects
+        widget: list
+        fields:
+        - name: project
+          widget: object
+          label: "project"
+          fields:
+          - name: title
+            widget: string
+          - name: images
+            widget: list
+            fields:
+            - name: image
+              widget: image
