@@ -12,10 +12,14 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-    preview: false
+      preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "image", name: "image", widget: "image"}
+      - label: "blog-post"
+        name: "blog-post"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Hero Image", name: "hero-image", widget: "image"}
+          - { label: "Body", name: "body", widget: "markdown" }

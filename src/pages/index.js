@@ -27,23 +27,5 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            date
-            description
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1024){
-                  ...GatsbyImageSharpFluid_noBase64
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `
