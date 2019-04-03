@@ -9,18 +9,3 @@ exports.onCreateNode = ({ node }) => {
   fmImagesToRelative(node);
 };
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-    const { createNodeField } = boundActionCreators;
-    if (node.internal.type === `MarkdownRemark`) {
-      const slug = createFilePath({
-        node,
-        getNode, 
-        // basePath: `pages`
-      });
-      createNodeField({
-        node,
-        name: "slug",
-        value: slug,
-      });
-    }
-  };
