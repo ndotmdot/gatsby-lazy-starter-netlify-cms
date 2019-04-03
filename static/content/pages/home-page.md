@@ -3,6 +3,7 @@ name: home-page
 projects:
   - project:
       images:
-        - image:
-      title: Test Page
+        - image: /media/dots-13.jpg
+      title: avcz
 ---
+
