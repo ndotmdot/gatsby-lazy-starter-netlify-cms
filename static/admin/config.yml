@@ -14,37 +14,29 @@ collections:
     editor:
       preview: false
     fields:
-    - label: "blog-post"
-      name: "blog-post"
-      default: "blog-post"
-      widget: object
-      fields:
       - { label: "Title", name: "title", widget: string }
       - { label: "Publish Date", name: "date", widget: datetime }
       - { label: "Description", name: "description", widget: string }
       - { label: "Body", name: "body", widget: markdown }
-  - name: pages
-    label: pages
+  - label: "Pages"
+    name: "pages"
     editor:
       preview: false
     files:
-    - name: home-page
-      label: "Home Page"
-      file: /static/content/pages/home-page.md
-      fields:
-      - name: name
-        widget: hidden
-      - name: projects
-        widget: list
+      - name: home-gallery
+        label: "Home Gallery"
+        file: /static/content/pages/home-gallery.md
         fields:
-        - name: project
-          widget: object
-          label: "project"
-          fields:
-          - name: title
-            widget: string
-          - name: images
-            widget: list
+          - label: "Projects"
+            name: "projects"
+            widget: list 
             fields:
-            - name: image
-              widget: image
+              - label: "Project"
+                name: "project"
+                widget: object
+                fields:
+                - { label: "Title", name: "title", widget: string }
+                - label: "Images"
+                  widget: list
+                  fields:
+                  - { label: "Image", name: "image", widget: image }
