@@ -1,8 +1,8 @@
 ---
 blog-post:
-  body: asdf
+  body: And some lorem ipsum
   date: 2019-04-04T22:20:46.389Z
-  description: asdf
-  title: asdf
+  description: With demo text
+  title: This is The Demo Post
 ---
 
