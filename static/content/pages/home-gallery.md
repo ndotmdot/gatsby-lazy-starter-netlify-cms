@@ -2,7 +2,7 @@
 projects:
   - project:
       title: Demo Project
-      undefined:
+      images:
         - image: /media/dots-13.jpg
 ---
 
