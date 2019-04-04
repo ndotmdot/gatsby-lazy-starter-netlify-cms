@@ -1,5 +1,4 @@
 ---
-name: home-page
 projects:
   - project:
       images:
