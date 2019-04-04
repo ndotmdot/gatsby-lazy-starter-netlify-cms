@@ -14,15 +14,11 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "blog-post"
-        name: "blog-post"
-        widget: "object"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Hero Image", name: "hero-image", widget: "image"}
-          - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Hero Image", name: "hero-image", widget: "image"}
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: pages
     label: pages
     editor:
