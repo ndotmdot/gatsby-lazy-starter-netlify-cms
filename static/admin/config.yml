@@ -21,7 +21,7 @@ collections:
       - { label: "Image", name: "image", widget: image }
   - label: "Pages"
     name: "pages"
-    format: yaml-frontmatter
+    format: toml-frontmatter
     extension: md
     editor:
       preview: false
