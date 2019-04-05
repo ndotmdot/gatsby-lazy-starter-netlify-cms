@@ -33,4 +33,11 @@ collections:
           - label: "Projects"
             name: "projects"
             widget: "list" 
-            field: { label: "Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+            fields: 
+              - label: "Title"
+                name: "title"
+                widget: string 
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: { label: "Image", name: "image", widget: "image"}
