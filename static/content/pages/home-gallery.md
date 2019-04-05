@@ -1,11 +1,12 @@
 ---
 projects:
   - images:
-      - /media/indors-pattern.png
       - /media/dots-13.jpg
-    title: asdf
+      - /media/dots-46.png
+    title: 24 Dots
   - images:
-      - /media/indors-pattern.png
-      - /media/photo.jpg
-    title: dds
+      - /media/relegion-01.png
+      - /media/room-3.png
+    title: Cubes
 ---
+
