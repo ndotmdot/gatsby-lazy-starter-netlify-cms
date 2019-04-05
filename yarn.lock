@@ -4293,6 +4293,11 @@ es6-iterator@^2.0.1, es6-iterator@~2.0.3:
     es5-ext "^0.10.35"
     es6-symbol "^3.1.1"
 
+es6-promise@^2.0.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
+  integrity sha1-lu258v2wGZWCKyY92KratnSBgbw=
+
 es6-promise@^3.0.2:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
@@ -5336,6 +5341,15 @@ gatsby-plugin-manifest@^2.0.25:
     bluebird "^3.5.0"
     sharp "^0.21.3"
 
+gatsby-plugin-netlify-cms-paths@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms-paths/-/gatsby-plugin-netlify-cms-paths-1.2.1.tgz#4f536542aa29f01d0b5985f6c2b05bfae79e1e97"
+  integrity sha512-5j9Q0WaBQphz2GspffF76ucMZBI3C1XpcnzARYOLITUEDGLlepZcdk6AWur9vRz+y/QlinzEWZrHDioor+zXYg==
+  dependencies:
+    babel-runtime "^6.26.0"
+    read-yaml-promise "^1.0.2"
+    unist-util-select "^1.5.0"
+
 gatsby-plugin-netlify-cms@^3.0.17:
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.17.tgz#fd06a9cb061800a6519cd94b3647f6f058de5102"
@@ -5438,6 +5452,19 @@ gatsby-remark-images@^3.0.10:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.0.1"
+
+gatsby-remark-relative-images-v2@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images-v2/-/gatsby-remark-relative-images-v2-0.1.5.tgz#3354c7abd96b10b760a934f8c9160e88cbdd1fb1"
+  integrity sha512-e8T1/nAltKzGYJpMzAXL46MdqNkzHGpbBqe+rW6lmBAf57o/j0PchjWaaonQl2YXdGTu0YKFpgGmxuPHEX/FUQ==
+  dependencies:
+    babel-polyfill "^6.26.0"
+    cheerio "1.0.0-rc.2"
+    deep-map "1.5.0"
+    is-relative-url "2.0.0"
+    lodash "4.17.5"
+    slash "2.0.0"
+    unist-util-select "1.5.0"
 
 gatsby-remark-relative-images@^0.2.2:
   version "0.2.2"
@@ -7465,7 +7492,7 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.12.2, js-yaml@^3.13.0, js-yaml@^3.5.2, js-yaml@^3.9.0:
+js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.12.2, js-yaml@^3.13.0, js-yaml@^3.5.2, js-yaml@^3.8.2, js-yaml@^3.9.0:
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
   integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
@@ -8064,6 +8091,11 @@ lodash@4.17.11, lodash@^4.1.1, lodash@^4.11.1, lodash@^4.15.0, lodash@^4.17.10, 
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+
+lodash@4.17.5:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+  integrity sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw==
 
 logalot@^2.0.0, logalot@^2.1.0:
   version "2.1.0"
@@ -11433,6 +11465,22 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
+
+read-yaml-promise@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/read-yaml-promise/-/read-yaml-promise-1.0.2.tgz#604b6113f27f773790f4a7462d0427305ed0647b"
+  integrity sha1-YEthE/J/dzeQ9KdGLQQnMF7QZHs=
+  dependencies:
+    es6-promise "^2.0.0"
+    read-yaml "^1.0.0"
+
+read-yaml@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/read-yaml/-/read-yaml-1.1.0.tgz#0d273ac0c95be92230dc0d4c4c4f5b8960a336d6"
+  integrity sha1-DSc6wMlb6SIw3A1MTE9biWCjNtY=
+  dependencies:
+    extend-shallow "^2.0.1"
+    js-yaml "^3.8.2"
 
 read@1, read@^1.0.7, read@~1.0.1, read@~1.0.7:
   version "1.0.7"

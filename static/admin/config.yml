@@ -37,8 +37,8 @@ collections:
                 widget: object
                 fields:
                 - { label: "Title", name: "title", widget: string }
-                - label: "Images"
-                  name: images
+                - label: "Slider"
+                  name: slider
                   widget: list
                   fields:
                   - { label: "Image", name: "image", widget: image }
