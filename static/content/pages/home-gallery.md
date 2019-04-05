@@ -1,8 +1,8 @@
 ---
 projects:
-  - project:
-      slider:
-        - image: /media/indors-pattern.png
+  project:
+      images:
+        image: /media/dots-13.jpg
       title: peter
 ---
 

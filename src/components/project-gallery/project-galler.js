@@ -17,14 +17,26 @@ const ProjectGallery = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
+        file(relativePath: {eq: "home-gallery.md"}) {
+          childMarkdownRemark {
+            frontmatter {
+              projects {
+                project {
+                  title
+                  images {
+                    image {
+                      childImageSharp {
+                        fluid(maxWidth: 300) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
-      }
     `}
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
@@ -32,17 +44,3 @@ const ProjectGallery = () => (
 export default ProjectGallery
 
 
-// gallery: file(relativePath: {eq: "home-gallery.md"}) {
-//   childMarkdownRemark {
-//     frontmatter {
-//       projects {
-//         project {
-//           title
-//           images {
-//             image
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

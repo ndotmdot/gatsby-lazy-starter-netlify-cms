@@ -28,6 +28,7 @@ collections:
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
         fields:
+          - { label: "Image", name: "image", widget: image }
           - label: "Projects"
             name: "projects"
             widget: list 
@@ -36,9 +37,9 @@ collections:
                 name: "project"
                 widget: object
                 fields:
-                - { label: "Title", name: "title", widget: string }
-                - label: "Slider"
-                  name: slider
-                  widget: list
-                  fields:
-                  - { label: "Image", name: "image", widget: image }
+                  - { label: "Title", name: "title", widget: string }
+                  - label: "Images"
+                    name: "images"
+                    widget: list
+                    fields:
+                      - { label: "Image", name: "image", widget: image }
