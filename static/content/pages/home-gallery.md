@@ -1,8 +1,15 @@
----
-projects:
-  - project:
-      images:
-        - image: /media/indors-pattern.png
-      title: czxcvz
----
+{
+  projects: [
+    {
+      project: {
+        title: peter
+        images: [
+          {
+            image: /media/indors-pattern.png
+          }
+        ]
+      }
+    }
+  ]
+}
 
