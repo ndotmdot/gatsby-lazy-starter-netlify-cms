@@ -1,8 +1,10 @@
----
-projects:
-  - project:
-      images:
-        image: /media/dots-13.jpg
-      title: asdf
----
++++
+[[projects]]
+
+[projects.project]
+title = "asdf"
+
+[[projects.project.images]]
+image = "/media/indors-pattern.png"
++++
 
