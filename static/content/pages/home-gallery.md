@@ -1,14 +1,8 @@
-{
-  "projects": [
-    {
-      "project": {
-        "title": peter
-        "images": [
-          {
-            "image": /media/indors-pattern.png
-          }
-        ]
-      }
-    }
-  ]
-}
+---
+projects:
+  - project:
+      images:
+        - image: /media/indors-pattern.png
+      title: asdf
+---
+
