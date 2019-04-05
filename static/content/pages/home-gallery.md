@@ -1,7 +1,6 @@
 ---
 projects:
-  - images:
-      - /media/dots-13.jpg
-    name: ccc
+  - - /media/indors-pattern.png
+    - /media/dots-13.jpg
 ---
 
