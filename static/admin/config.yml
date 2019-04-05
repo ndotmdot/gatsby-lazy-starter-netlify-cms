@@ -28,7 +28,7 @@ collections:
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
         format: json-frontmatter
-        extension: json
+        extension: md
         fields:
           - label: "Projects"
             name: "projects"
