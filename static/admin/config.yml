@@ -21,14 +21,14 @@ collections:
       - { label: "Image", name: "image", widget: image }
   - label: "Pages"
     name: "pages"
+    format: json-frontmatter
+    extension: md
     editor:
       preview: false
     files:
       - name: home-gallery
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
-        format: json-frontmatter
-        extension: md
         fields:
           - label: "Projects"
             name: "projects"

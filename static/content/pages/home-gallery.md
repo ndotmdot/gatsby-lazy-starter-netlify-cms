@@ -1,9 +1,14 @@
----
-projects:
-  - project:
-      images:
-        - image: /media/indors-pattern.png
-        - image: /media/indors-pattern.png
-      title: Test
----
-
+{
+  "projects": [
+    {
+      "project": {
+        "title": peter
+        "images": [
+          {
+            "image": /media/indors-pattern.png
+          }
+        ]
+      }
+    }
+  ]
+}
