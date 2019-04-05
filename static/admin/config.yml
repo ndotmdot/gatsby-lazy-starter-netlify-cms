@@ -21,26 +21,27 @@ collections:
       - { label: "Image", name: "image", widget: image }
   - label: "Pages"
     name: "pages"
-    format: frontmatter
-    extension: md
+    format: "frontmatter"
+    extension: "md"
     editor:
       preview: false
     files:
-      - name: home-gallery
+      - name: "home-gallery"
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - label: "Projects"
             name: "projects"
-            widget: list 
-            fields:
+            widget: "list" 
+            field:
               - label: "Project"
                 name: "project"
-                widget: object
+                widget: "object"
                 fields:
-                  - { label: "Title", name: "title", widget: string }
+                  - { label: "Title", name: "title", widget: "string" }
                   - label: "Images"
                     name: "images"
-                    widget: list
-                    fields:
-                      - { label: "Image", name: "image", widget: image }
+                    widget: "list"
+                    field:
+                      - { label: "Image", name: "image", widget: "image" }
