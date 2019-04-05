@@ -27,8 +27,8 @@ collections:
       - name: home-gallery
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
+        format: "json"
         fields:
-          - { label: "Image", name: "image", widget: image }
           - label: "Projects"
             name: "projects"
             widget: list 
