@@ -1,6 +1,3 @@
 ---
-projects: 
- - project: 
-   title: "hello"
 ---
 
