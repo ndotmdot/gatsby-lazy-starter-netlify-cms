@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 projects:
   - images:
@@ -9,7 +7,5 @@ projects:
   - images:
       - /media/indors-pattern.png
       - /media/photo.jpg
-    title: dddd
+    title: dds
 ---
-
->>>>>>> 2c2acba470a827265ea033eb84b897f5e864223f

@@ -5,10 +5,12 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import ProjectGallery from "../components/project-gallery/project-gallery"
 
 export default ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <ProjectGallery />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>{data.site.siteMetadata.title}</p>
