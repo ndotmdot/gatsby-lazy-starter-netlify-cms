@@ -30,18 +30,11 @@ collections:
         label: "Home Gallery"
         file: /static/content/pages/home-gallery.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
           - label: "Projects"
             name: "projects"
             widget: "list" 
             field:
-              - label: "Project"
-                name: "project"
-                widget: "object"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - label: "Images"
-                    name: "images"
-                    widget: "list"
-                    field:
-                      - { label: "Image", name: "image", widget: "image" }
+              label: "Images"
+              name: "images"
+              widget: "list"
+              field: { label: "Image", name: "image", widget: "image" }

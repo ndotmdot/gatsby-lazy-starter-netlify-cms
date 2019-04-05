@@ -1,9 +1,10 @@
 ---
-title: asdf
-projects:
-  - images:
-      - image: /media/indors-pattern.png
-      - image: /media/indors-pattern.png
-    title: asdf
+projects: 
+- title: asdf
+  images: 
+  - image: ../media/indors-pattern.png
+  - image: ../media/indors-pattern.png
+- thing: peter
+
 ---
 
