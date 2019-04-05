@@ -1,14 +1,18 @@
 {
-  "projects": [
+"projects": [
     {
       "project": {
-        "title": peter
+        "title": "cX",
         "images": [
           {
-            "image": /media/indors-pattern.png
+            "image": "/media/indors-pattern.png"
+          },
+          {
+            "image": "/media/photo.jpg"
           }
         ]
       }
     }
   ]
 }
+
