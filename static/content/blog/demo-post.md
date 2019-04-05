@@ -1,6 +1,7 @@
 ---
-body: And some lorem ipsum
+title: This is The Demo Post
 date: 2019-04-04T22:20:46.389Z
 description: With demo text
-title: This is The Demo Post
+image: /media/dots-13.jpg
 ---
+asdf
