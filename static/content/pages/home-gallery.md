@@ -3,6 +3,7 @@ projects:
   - project:
       images:
         - image: /media/indors-pattern.png
-      title: asdf
+        - image: /media/indors-pattern.png
+      title: Test
 ---
 
