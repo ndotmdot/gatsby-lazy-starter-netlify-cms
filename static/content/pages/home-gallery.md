@@ -1,11 +1,11 @@
 {
-  projects: [
+  "projects": [
     {
-      project: {
-        title: peter
-        images: [
+      "project": {
+        "title": peter
+        "images": [
           {
-            image: /media/indors-pattern.png
+            "image": /media/indors-pattern.png
           }
         ]
       }
