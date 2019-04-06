@@ -1,0 +1,9 @@
+@import '../../node_modules/swiper/dist/css/swiper.css';
+
+.swiper {
+  .info {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}

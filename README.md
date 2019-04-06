@@ -2,5 +2,8 @@
 
 TODO
 
-configure gatsby-plugin-netlify-cms-paths
-https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-cms-paths/?=netlify-cms
+https://www.gatsbyjs.org/packages/gatsby-plugin-web-font-loader/?=
+
+https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt/?=
+
+https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/?=
