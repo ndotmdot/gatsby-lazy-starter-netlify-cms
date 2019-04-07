@@ -1,4 +1,4 @@
-import BasicSwiper from "./BasicSwiper"
+import BasicSwiper from "./BasicSwiper/BasicSwiper"
 import RowFixed from "./RowFixed"
 
 export { BasicSwiper, RowFixed }

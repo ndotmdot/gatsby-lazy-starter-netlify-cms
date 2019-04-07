@@ -47,5 +47,21 @@ collections:
         file: /static/content/pages/about.md
         fields:
           - { label: "Description", name: "description", widget: "text" }
+      - name: "contact"
+        label: "Contact "
+        file: /static/content/pages/contact.md
+        fields:
+          - label: "Phone"
+            name: "phone"
+            widget: "object"
+            fields:
+              - label: "Number", name: "number", widget: "number"
+              - label: "Show", name: "show", widget: "boolean"
+          - label: "E-Mail"
+            name: "email"
+            widget: "object"
+            fields:
+              - label: "Address", name: "address", widget: "number"
+              - label: "Show", name: "show", widget: "boolean"
 
 
