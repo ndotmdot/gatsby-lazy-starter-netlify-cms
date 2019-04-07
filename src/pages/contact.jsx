@@ -5,25 +5,51 @@ import { SEO } from "utilities"
 import { graphql } from "gatsby"
 
 export default ({ data, location }) => {
-  const { description } = data.about.childMarkdownRemark.frontmatter
+  const { phone, email } = data.contact.childMarkdownRemark.frontmatter
   return(
     <Layout location={location}>
       <SEO title="Page two" />
-      <RowFixed>
-        <div className="col-12">
-          <p>{description}</p>
-        </div>
-      </RowFixed>
+        { phone.show &&
+          <RowFixed>
+            <div className="col-3">
+              <p>Phone</p>
+            </div>
+            <div className="col-3">
+              <a href={`tel:${phone.number}`}>
+                {phone.number}
+              </a>
+            </div>
+          </RowFixed> 
+        },
+        { email.show && 
+          <RowFixed>
+            <div className="col-3">
+              <p>Email</p>
+            </div>
+            <div className="col-3">
+              <a href={`mailto:${email.address}`}>
+                {email.address}
+              </a>
+            </div>
+          </RowFixed> 
+        }
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    about: file(relativePath: {eq: "about.md"}) {
+    contact: file(relativePath: {eq: "contact.md"}) {
       childMarkdownRemark {
         frontmatter {
-          description
+          phone {
+            number
+            show
+          }
+          email {
+            address
+            show
+          }
         }
       }
     } 

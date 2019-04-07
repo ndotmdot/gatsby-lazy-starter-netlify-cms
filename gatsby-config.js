@@ -1,17 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Marc Thalberg`,
     description: `Starter`,
     author: `Niklas May`,
     menuLinks:[
       {
+        name: 'about',
+        link: '/about'
+      },
+      {
+        name: 'contact',
+        link: '/contact'
+      },
+      {
         name: 'home',
         link: '/'
       },
-      {
-        name: 'about',
-        link: '/about'
-      }
     ]
   },
   plugins: [
@@ -95,7 +99,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify`,
