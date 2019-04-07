@@ -1,0 +1,22 @@
+.ticker {
+  font-family: VT323, Courier, monospace;
+  width: 100%;
+  overflow: hidden;
+
+ .message {
+   width: 2000%;
+
+    p {
+      word-wrap: none;
+
+      display: inline;
+      overflow: hiddden !important;
+
+      text-overflow: clip;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+}
+}
