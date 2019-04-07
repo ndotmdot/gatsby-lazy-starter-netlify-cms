@@ -1,8 +1,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import RowFixed from "helper/RowFixed"
-import BasicSwiper from "helper/BasicSwiper"
+import { RowFixed, BasicSwiper } from "elements"
 
 const ProjectGallery = () => {
   const { gallery } = useStaticQuery(

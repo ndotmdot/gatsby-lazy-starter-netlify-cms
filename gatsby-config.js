@@ -13,8 +13,9 @@ module.exports = {
         root: './src',
         aliases: {
           components: './components',
+          elements: './elements',
           scss: './scss',
-          helper: './helper',
+          utilities: './utilities',
         }
       }
     },

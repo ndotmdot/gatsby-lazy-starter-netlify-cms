@@ -1,12 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "components/layout"
-import SEO from "components/seo"
+import Layout from 'components/Layout'
 import ProjectGallery from "components/ProjectGallery"
-import "scss/styles.scss"
-
-
+import { SEO } from "utilities"
 
 export default ({ data }) => (
   <Layout>
