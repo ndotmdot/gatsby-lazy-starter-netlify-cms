@@ -25,6 +25,7 @@ collections:
     extension: "md"
     editor:
       preview: false
+    delete: false
     files:
       - name: "home-gallery"
         label: "Home Gallery"
@@ -41,3 +42,10 @@ collections:
                 name: "images"
                 widget: "list"
                 field: { label: "Image", name: "image", widget: "image"}
+      - name: "about"
+        label: "About "
+        file: /static/content/pages/about.md
+        fields:
+          - { label: "Description", name: "description", widget: "text" }
+
+

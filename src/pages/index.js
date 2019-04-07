@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from 'components/Layout'
 import ProjectGallery from "components/ProjectGallery"
@@ -9,6 +9,7 @@ export default ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <ProjectGallery />
+    <Link to="/about">page to</Link>
   </Layout>
 )
 
