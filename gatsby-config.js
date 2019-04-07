@@ -113,6 +113,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
+        google: {
+          families: ['VT323']
+        },
         custom: {
           families: ['HK Grotesk Regular'],
           urls: [`static/fonts/HK_Grotesk/stylesheet.css`]

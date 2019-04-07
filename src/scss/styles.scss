@@ -3,8 +3,8 @@
 @import "_typography";
 
 
-$font-family-sans: 'gt_americaexpanded_black';
+$font-family-sans: 'hk_groteskregular';
 
 html, body {
-    font-family: 'gt_americaexpanded_black';
+    font-family: $font-family-sans;
 }
