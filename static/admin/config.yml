@@ -55,13 +55,13 @@ collections:
             name: "phone"
             widget: "object"
             fields:
-              - label: "Number", name: "number", widget: "number"
-              - label: "Show", name: "show", widget: "boolean"
+              - { label: "Number", name: "number", widget: "number" }
+              - { label: "Show", name: "show", widget: "boolean" }
           - label: "E-Mail"
             name: "email"
             widget: "object"
             fields:
-              - label: "Address", name: "address", widget: "number"
-              - label: "Show", name: "show", widget: "boolean"
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Show", name: "show", widget: "boolean" }
 
 
