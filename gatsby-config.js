@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `media`,
-        path: `${__dirname}/static/content/media`,
+        name: `uploads`,
+        path: `${__dirname}/static/content/uploads`,
       },
     },
     {
@@ -59,6 +59,13 @@ module.exports = {
       options: {
         name: `fonts`,
         path: `${__dirname}/static/ui/fonts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/ui/images`,
       },
     },
     `gatsby-transformer-sharp`,
