@@ -36,13 +36,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `media`,
         path: `${__dirname}/static/content/media`,
       },
@@ -100,16 +93,9 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `static/ui/images/favicon.png`, // This path is relative to the root of the site.
       },
     }, 
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        precision: 8,
-      },
-    },
-    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -118,9 +104,27 @@ module.exports = {
         },
         custom: {
           families: ['HK Grotesk Regular'],
-          urls: [`static/fonts/HK_Grotesk/stylesheet.css`]
+          urls: [`/ui/fonts/_allAtFontface.css`]
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        precision: 8,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "Link: </ui/fonts/_allAtFontface.css>; rel=preload; as=stylesheet",
+          ]
+        },
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
+      },
+    }
   ],
 }

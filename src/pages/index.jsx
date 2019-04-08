@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from 'components/Layout/Layout'
 import ProjectGallery from "components/ProjectGallery/ProjectGallery"
 import { SEO } from "utilities"
+import "scss/styles.scss"
 
 export default ({ data }) => {
   const { gallery } = data
