@@ -7,7 +7,7 @@ const BasicSwiper = (props) => {
   const { images, title, classes } = props
 
   const [ swiper, updateSwiper ] = useState(null)
-  const [ slideIndex, setSlideIndex ] = useState(1)
+  const [ pagination, setPagination ] = useState(1)
   const params = {
     speed: 400,
     spaceBetween: 0,
@@ -21,7 +21,7 @@ const BasicSwiper = (props) => {
   useEffect(() => {
     if(swiper !== null) {
       swiper.on('slideChange', () => {
-        setSlideIndex(swiper.realIndex + 1)
+        setPagination(swiper.realIndex + 1)
       })
     }
   })
@@ -30,7 +30,7 @@ const BasicSwiper = (props) => {
     <div className={classNames("swiper", classes)} >
       <div className="info">
         <span className="title"><p>{title}</p></span>
-        <span className="pagination"><p>{slideIndex}</p></span>
+        <span className="pagination"><p>{pagination}</p></span>
       </div>
       <Swiper {...params}>
         {

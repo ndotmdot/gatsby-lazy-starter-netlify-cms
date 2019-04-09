@@ -1,14 +1,15 @@
 import React from "react"
-import Layout from 'components/Layout/Layout'
-import { RowFixed } from 'elements'
-import { SEO } from "utilities"
 import { graphql } from "gatsby"
+import { SEO } from "utilities"
+import { RowFixed } from 'elements'
+import Layout from 'components/Layout/Layout'
 
 export default ({ data, location }) => {
   const { description } = data.about.childMarkdownRemark.frontmatter
+
   return(
     <Layout location={location}>
-      <SEO title="Page two" />
+      <SEO title="About" />
       <RowFixed>
         <div className="col-12">
           <p>{description}</p>

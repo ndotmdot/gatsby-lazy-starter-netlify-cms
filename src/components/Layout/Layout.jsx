@@ -42,12 +42,14 @@ const Layout = ({ children, location }) => {
   const { menuLinks, title } = site.siteMetadata
 
   return (
-    <div>
+    <React.Fragment>
       <Ticker data={ticker} />
       <Header siteTitle={title} menuLinks={menuLinks} location={location}/>
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
       <Footer siteTitle={title} />
-    </div>
+    </React.Fragment>
   )
 }
 
