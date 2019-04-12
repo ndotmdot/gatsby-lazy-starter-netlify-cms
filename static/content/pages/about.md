@@ -1,3 +1,25 @@
----
----
+Marc Thalberg, geboren 1984 in München, begann seine künstlerische Kar- riere bereits früh mit dem Zeichnen von Graffities und dem Verfassen von Kurzgeschichten. Nach der Ausbildung zum Mediengestalter für Bild und Ton studierte er Medienkunst in der Klasse von Klaus vom Bruch an der Münchner Akademie der bildenden Künste. Dort entwickelte er seine Vorliebe für Kunst mit System. Welches in der Umsetzung bedeutet, dass all seine Werken auf Grund einer mathematisch konstruierten Realität, bzw. parallel stattfindenden Ereignissen aufbauen.
 
+Nach dem Studium verbrachte er drei Jahre in Berlin und arbeitete dort haupt- sächlich an der Analyse von Zahlenkombinatorik in Verbindung zum Glückspiel Roulette. Den Anstoß hierzu gab eine verlorene Partie Online-Roulette, bei der er 600,- Euro verspielte. Viel Geld für einen jungen Künstler. So begab er sich auf die Suche nach einem System diese Form des Glücksspiels zu überlisten. Natürlich ist durchaus bekannt, dass ein solches System nicht existiert. Je- doch gibt es etliche Möglichkeiten sich eine höhere Chance zum Gewinn zu verschaffen und eine theoretisch komplexe Lösung für parallele Ereignisse und Verkettungen innerhalb des Spiels zu erkennen. Hierzu entstand in den drei Jahren eine beeindruckende Sammlung an vielschichtigen Aufzeichnungen zu seinen Überlegungen, die viele Ordner in durchwachten Nächten füllten. Diese Überlegungen führten ihn zu einer streng grafischen Malerei, sowie der zeichnerischen Umsetzung und dem Erarbeiten durchdachter Objekte und In- stallationen. Viele seiner Rauminstallationen sind zusätzlich mit seinen eigens produzierten Klängen und Klangkulissen unterlegt. Die angewandten Erkennt- nisse und Methoden seiner entwickelten Systeme und Strukturen benutzt er nun, um eine erweiterte Sprache für die Kunst zu finden.
+
+Er selbst bezeichnet sich nicht als Künstler, sondern als einer, der es einmal werden will. Mit seinem durchaus verkopftem Oevre überzeugt er jedoch schnell vom Gegenteil.
+
+Keine Kunst macht er, sondern Welten. Welten, in die der Betrachter versinken kann. Jede einzelne mit einem eigentlich alltäglichen Bezug, nur eben einige Ebenen tiefer. Sozusagen eine tiefere Realität.
+
+Entstanden ist dieser Ansatz aus seiner eigenen Denkweise. Dem Zerstückeln von Inhalten in immer kleiner werdende Bestandteile, sehr grafisch, in kleine Matrizen.
+
+Er versucht also das Innere der menschlichen, bzw. seiner ganz persönlichen Gedankenwelt zu verstehen, zu übersetzten und in einer bildlichen Formenspra- che zu veranschaulichen. Mit dieser Methode entstehen grafische, zeitweise sehr streng logisch konzipierte Bilder und Installationen, meist in schwarzweiß gehalten, in der Absicht Unklarheiten zu vermeiden.
+
+Seine Werke entstehen aus mathematischen und gestalterischen Grundele- menten. Die Leinwand ist von einer gleichmäßigen Matrix aus quadratischen Feldern bedeckt. Immer Kante auf Kante folgend, immer schwarz, oder weiß. Darauf sind nach strengen Schemen Elemente angeordnet, in Kontrastierendem schwarz und/oder weiß, die einer in Symbolen verschlüsselten Ordnung folgen, entweder mathematisch, oder intuitiv.
+
+Das Spielrad im Roulette, welches scheinbar zufällige Zahlenreihen produziert, diente ihm dabei als Ausgangspunkt. Mit Hilfe von vektoriellen Methoden versucht Marc Thalberg in unzähligen Gedankenschritten eine Logik, einen Zusammenhang innerhalb dieser Verkettungen zu finden.
+
+Im Roulette ist jedes Ereignis unabhängig vom Vorherigen. Es herrscht also keine Kausalitätsverkettung, sondern nur die Ursache und deren Wirkung, in unendlicher, scheinbar unzusammenhängender Aneinanderreihung. Und doch gibt es Wiederholungen. Sind diese nun mathematisch erklärbar, oder reiner Zufall? Dieses Prinzip lässt sich auf das alltägliche Leben übertragen. Auch hier gibt es eine Verkettung scheinbar zufällig aufeinanderfolgender Ereignisse. Manchmal in perfekt abgerundeter Kreisform, manchmal eher spiralförmig, sozusagen den Anschluss an den Anfang verpassend. So kann das Leben eines Menschen in mathematischer Hinsicht als eine Aneinanderreihung kreisförmiger Kurven dargestellt werden, die in sich keiner klaren Logik entsprechen.
+
+Wenn nun aber der Rückschluss auf das menschliche Denken geschlossen wird, so ließe sich dieses eher in Rastern erklären. Einer modellhaften Verein- fachung dessen, was rational kaum zu durchschauen ist. Es ist der Versuch, einen sprunghaften Prozess in eine klare lineare Form zu transformieren. Dies erklärt die Wahl der klaren Linien und Rastern in den Werken von Marc Thalberg.
+
+Eine weitere zentrale Komponente ist der Zusammenhang von Nichts und Allem. Eine Verkettung findet ihren Ursprung immer irgendwo, sozusagen aus dem Nichts und nährt sich in ihrem Verlauf an den aufeinander folgenden Ereignis- sen. An einem gewissen Punkt kann sie inne halten, sich transformieren, neue Züge annehmen, schneller oder langsamer werden, oder einen Endpunkt finden. In seinen Arbeiten betrachtet er alles auf der Basis der 1, denn 2 = 2 x 1, 3 = 3 x 1, etc.
+
+Ein Universum, eine Galaxie, ein Sonnensystem, eine Welt, ein Kontinent, ein Land, eine Region, eine Stadt, ein Viertel, ein Haus, eine Wohnung, ein Mensch, ein Innenleben, ein Gefühl, ein Leben. Parallel dazu existiert das ganz in einer Wiederholung, welche sich innerhalb eines bestimmten Rahmens bewegt. Das Raster, der Rahmen, die klare Linie.
+
+Marc Thalberg lebt und arbeitet in München.
