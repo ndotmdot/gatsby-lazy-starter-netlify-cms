@@ -56,7 +56,8 @@ collections:
         label: "About "
         file: /static/content/pages/about.md
         fields:
-          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Description", name: "body", widget: "markdown" }
+          - { label: "Image", name: "image", widget: "image"}
       - name: "contact"
         label: "Contact "
         file: /static/content/pages/contact.md

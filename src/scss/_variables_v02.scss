@@ -87,7 +87,7 @@ $theme-colors: map-merge(
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1.37rem !default;
+$spacer: 1rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
@@ -156,8 +156,7 @@ $font-size-base:              $spacer !default; // Assumes the browser default, 
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
-
-$font-line-height-base:            1.35 !default;
+$font-weight-base:            400 !default;
 
 // Utilities
 

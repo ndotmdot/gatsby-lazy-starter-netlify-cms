@@ -1,9 +1,13 @@
 @import '../../../node_modules/swiper/dist/css/swiper.css';
+@import '../../scss/styles.scss';
 
 .swiper {
   .info {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+  }
+  p {
+    padding-bottom: $spacer * 0.5;
   }
 }

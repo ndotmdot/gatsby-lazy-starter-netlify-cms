@@ -10,7 +10,7 @@ const Header = ({ siteTitle, menuLinks, location = "isHome" }) => {
     <RowFixed>
       <div className="col-12">
         <span>
-          <p>{siteTitle}</p>   
+          <p className="bold">{siteTitle}</p>   
         </span>
         <span className="nav">
           {

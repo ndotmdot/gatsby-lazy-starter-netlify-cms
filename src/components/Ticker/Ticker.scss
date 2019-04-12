@@ -1,22 +1,18 @@
-.ticker {
+@import '../../scss/styles.scss';
+
+marquee {
   font-family: VT323, Courier, monospace;
-  width: 100%;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
 
- .message {
-   width: 2000%;
-
-    p {
-      word-wrap: none;
-
-      display: inline;
-      overflow: hiddden !important;
-
-      text-overflow: clip;
+  p {
+    font-size: $spacer * 0.55;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    &::before{
+      content:' + + + '
     }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-}
+  }
 }

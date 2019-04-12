@@ -29,7 +29,7 @@ const BasicSwiper = (props) => {
   return (
     <div className={classNames("swiper", classes)} >
       <div className="info">
-        <span className="title"><p>{title}</p></span>
+        <span className="title bold"><p>{title}</p></span>
         <span className="pagination"><p>{pagination}</p></span>
       </div>
       <Swiper {...params}>

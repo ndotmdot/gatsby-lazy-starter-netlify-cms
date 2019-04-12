@@ -5,15 +5,15 @@ module.exports = {
     author: `Niklas May`,
     menuLinks:[
       {
-        name: 'about',
+        name: 'Info',
         link: '/about'
       },
       {
-        name: 'contact',
+        name: 'Kontakt',
         link: '/contact'
       },
       {
-        name: 'home',
+        name: 'Arbeiten',
         link: '/'
       },
     ]
@@ -110,7 +110,7 @@ module.exports = {
           families: ['VT323']
         },
         custom: {
-          families: ['HK Grotesk Regular'],
+          families: ['HK Grotesk Regular', ],
           urls: [`/ui/fonts/_allAtFontface.css`]
         }
       }

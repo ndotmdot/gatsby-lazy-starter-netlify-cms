@@ -1,65 +1,40 @@
 import React, { useEffect } from 'react'
+import { RowFixed } from 'elements'
 import './Ticker.scss'
 
 const Ticker = (props) => {
   const { items } = props.data.childMarkdownRemark.frontmatter
 
-  const getLetters = (items) => {
-    let chars = []
-
-    for(let i = 0; i < items.length; i++) {
-      let stringTemp = Array.from(items[i].description)
-
-      for(let j = 0; j < stringTemp.length; j++){
-        let charObject = {
-          char: stringTemp[j],
-          link: items[i].link
-        }
-        chars.push(charObject)
-      }
+  const messages = (() => {
+    const temp =[]
+    for(let i = 0; i < 1; i ++){
+      items.map(item => (
+        temp.push(item)
+      ))
     }
-    const charsTripple = []
-    for(let k = 0; k < 3; k++) {
-      for(let l = 0; l < chars.length; l++) {
-        charsTripple.push(chars[l])
-      }
-    }
-    return charsTripple
-  }
-  const letters = getLetters(items)
-
-  const animateTicker = () => {
-    const message = document.getElementsByClassName("message")
-    const firstChar = document.getElementsByClassName("message")[0].childNodes[0]
-    firstChar.remove()
-    message[0].appendChild(firstChar)
-  }
-
-  useEffect(() => {
-    animateTicker()
-    const tickerAnimation = window.requestAnimationFrame(() => {setInterval(animateTicker, 300)})
-
-    return clearInterval(tickerAnimation)
-  })
+    return temp
+  })()
 
   if(items) {
     return (
-    <div className="ticker">
-      <div className="message">
-        {
-        letters.map(letter => {
-          const { char, link } = letter
-          const key = Date.now() + char + link + Math.random()
-          if(link) {
-            return <a href={link} key={key}><p>{char}</p></a>
-          }else 
-          {
-            return <p key={key}>{char}</p>
-          }
-        })
-      }
-      </div>
-    </div>
+      <RowFixed>
+        <div className="col-12 ticker">
+          <marquee className="" direction="left" width="100%" scrollamount="4">
+            {
+              messages.map(message => {
+                const { description, link } = message
+                const key = Date.now() + description + link + Math.random()
+                if(link) {
+                  return <a href={link} key={key}><p>{description}</p></a>
+                }else 
+                {
+                  return <p key={key}>{description}</p>
+                }
+              })
+            }
+          </marquee>
+        </div>
+      </RowFixed>
   )
   }
   else {

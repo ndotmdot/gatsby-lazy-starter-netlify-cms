@@ -1,0 +1,4 @@
+@mixin sizing-single($key: $factor,) {
+  $key: $factor * $spacer;
+
+}

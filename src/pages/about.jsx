@@ -5,14 +5,14 @@ import { RowFixed } from 'elements'
 import Layout from 'components/Layout/Layout'
 
 export default ({ data, location }) => {
-  const { description } = data.about.childMarkdownRemark.frontmatter
+  const { body } = data.about.childMarkdownRemark.frontmatter
 
   return(
     <Layout location={location}>
       <SEO title="About" />
       <RowFixed>
         <div className="col-12">
-          <p>{description}</p>
+          <p className="p-large">{body}</p>
         </div>
       </RowFixed>
     </Layout>
@@ -24,7 +24,8 @@ export const query = graphql`
     about: file(relativePath: {eq: "about.md"}) {
       childMarkdownRemark {
         frontmatter {
-          description
+          body
+          image
         }
       }
     } 
