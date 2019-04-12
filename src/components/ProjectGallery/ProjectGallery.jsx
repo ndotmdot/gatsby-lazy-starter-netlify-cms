@@ -11,7 +11,7 @@ const ProjectGallery = (props) => {
         {
           projects.map(project => {
             const { images, title } = project
-            return <BasicSwiper images={images} title={title} key={title} classes="col-6"/>
+            return <BasicSwiper images={images} title={title} key={title} classes="col-sm-6 col-12"/>
           })
         }
       </RowFixed>

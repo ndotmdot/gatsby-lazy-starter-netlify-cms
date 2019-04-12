@@ -2,29 +2,38 @@ import React from "react"
 import { graphql } from "gatsby"
 import { SEO } from "utilities"
 import { RowFixed } from 'elements'
-import Layout from 'components/Layout/Layout'
 import Img from "gatsby-image"
 
 export default ({ data, location }) => {
-  const { html } = data;
+  const { html } = data.about.childMarkdownRemark;
   const { image } = data.about.childMarkdownRemark.frontmatter
 
-  console.log(html)
   return(
-    <Layout location={location}>
+    <React.Fragment>
       <SEO title="About" />
       <RowFixed>
-        <div className="col-3">
-          <Img 
-            fluid={image.childImageSharp.fluid}
-            objectFit="cover"
-            objectPosition="50% 50%"
-            alt=""
-          />
-        </div>
-        <div className="col-9 p-large" dangerouslySetInnerHTML={{ __html: {html} }} />
-      </RowFixed>
-    </Layout>
+      <div className="col-sm-3">
+      <p>Vita</p>
+      </div>
+        <div className="col-sm-9 p-large" 
+          dangerouslySetInnerHTML={
+             {
+              "__html": html,
+            }
+          } 
+        />
+        </RowFixed>
+        <RowFixed>
+          <div className="col-sm-3">
+            <Img 
+              fluid={image.childImageSharp.fluid}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt=""
+            />
+          </div>
+        </RowFixed>
+    </React.Fragment>
   )
 }
 

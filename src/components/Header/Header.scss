@@ -1,16 +1,19 @@
 @import '../../scss/styles.scss';
 
 header {
-  padding-bottom: $spacer * 1;
-  
+  padding-bottom: $spacer * 3;
+
   p {
     display: inline;
   }
+
   .nav {
     float: right;
-
+    display: inline;
+    
     p {
       padding-left: 20px;
     }
   }
+
 }

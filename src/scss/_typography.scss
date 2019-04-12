@@ -8,6 +8,10 @@ h1, h2, h3, p {
   margin-bottom: 0;
 }
 
+p {
+  margin-bottom: $spacer;
+}
+
 .p-large  {
     text-rendering: optimizeLegibility;
 }
@@ -19,4 +23,9 @@ a {
 
 .bold {
   font-family: 'hk_groteskbold';
+}
+
+.font-mono {
+  font-family: VT323, Courier, monospace;
+  font-size: $spacer * 0.55;
 }

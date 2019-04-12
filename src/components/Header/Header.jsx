@@ -3,7 +3,8 @@ import React from "react"
 import { RowFixed } from "elements"
 import './Header.scss'
 
-const Header = ({ siteTitle, menuLinks, location = "isHome" }) => {
+const Header = ({ siteTitle, menuLinks, location}) => {
+  console.log(location.pathname)
 
   return (
     <header >
@@ -15,10 +16,9 @@ const Header = ({ siteTitle, menuLinks, location = "isHome" }) => {
         <span className="nav">
           {
             menuLinks.map(link => {
-              const isHome = location === "isHome" ? true : false
               const linkIsCurrentPage = location.pathname === link.link ? false : true
 
-              if(isHome){
+              if(location.pathname === "/"){
                 if(link.link === "/about") {
                   return (
                     <Link to={link.link} key={link.link} ><p>{link.name}</p></Link>

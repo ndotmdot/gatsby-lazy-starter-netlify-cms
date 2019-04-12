@@ -5,11 +5,9 @@ const rowFixed = (props) => {
   const { classes, children, ...other } = props
 
   return(
-    <div className={classNames(classes, "container-fluid")} {...other}>
-      <div className="container">
-        <div className="row">
-          {children}
-        </div>
+    <div className={classNames(classes, "container")} {...other}>
+      <div className="row">
+        {children}
       </div>
     </div>
   )
