@@ -7,7 +7,7 @@ const Ticker = (props) => {
 
   const messages = (() => {
     const temp =[]
-    for(let i = 0; i < 1; i ++){
+    for(let i = 0; i < 10; i ++){
       items.map(item => (
         temp.push(item)
       ))
