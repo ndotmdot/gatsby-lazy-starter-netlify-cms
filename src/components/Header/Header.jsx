@@ -4,7 +4,6 @@ import { RowFixed } from "elements"
 import './Header.scss'
 
 const Header = ({ siteTitle, menuLinks, location}) => {
-  console.log(location.pathname)
 
   return (
     <header >
