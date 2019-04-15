@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import ProjectGallery from "components/ProjectGallery/ProjectGallery"
 import { SEO } from "utilities"
 import "scss/styles.scss"

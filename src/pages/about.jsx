@@ -4,7 +4,7 @@ import { SEO } from "utilities"
 import { RowFixed } from 'elements'
 import Img from "gatsby-image"
 
-export default ({ data, location }) => {
+export default ({ data }) => {
   const { html } = data.about.childMarkdownRemark;
   const { image } = data.about.childMarkdownRemark.frontmatter
 

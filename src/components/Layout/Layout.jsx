@@ -14,7 +14,7 @@ import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
 import "./Layout.css"
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -44,7 +44,7 @@ const Layout = ({ children, location }) => {
   return (
     <React.Fragment>
       <Ticker data={ticker} />
-      <Header siteTitle={title} menuLinks={menuLinks} location={location}/>
+      <Header siteTitle={title} menuLinks={menuLinks}/>
       <main>
         {children}
       </main>
