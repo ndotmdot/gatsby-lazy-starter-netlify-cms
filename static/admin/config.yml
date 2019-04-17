@@ -24,7 +24,7 @@ collections:
     format: "frontmatter"
     extension: "md"
     editor:
-      preview: false
+      preview: true
     delete: false
     files:
       - name: "home-gallery"

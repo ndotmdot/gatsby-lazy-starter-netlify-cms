@@ -1,5 +1,5 @@
 import React from 'react'
-import { RowFixed } from 'elements'
+import { RowFixed } from '../../elements/'
 import './Ticker.scss'
 
 const Ticker = (props) => {
