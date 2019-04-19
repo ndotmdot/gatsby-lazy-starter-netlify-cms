@@ -10,7 +10,7 @@ export default ({ data }) => {
 
   return(
     <React.Fragment>
-      <SEO title="About" />
+      <SEO title="Info" lang="de" />
       <RowFixed>
       <div className="col-sm-3">
       <p>Vita</p>

@@ -7,7 +7,7 @@ export default ({ data, location }) => {
   const { phone, email } = data.contact.childMarkdownRemark.frontmatter
   return(
     <React.Fragment>
-      <SEO title="Page two" />
+      <SEO title="Kontakt" lang="de" />
         { phone.show &&
           <RowFixed>
             <div className="col-3">

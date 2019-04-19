@@ -9,7 +9,7 @@ export default ({ data }) => {
 
   return (
     <React.Fragment>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Arbeiten" lang="de" />
       <ProjectGallery data={gallery} />
     </React.Fragment>
   )

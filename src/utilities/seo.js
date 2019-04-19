@@ -1,80 +1,100 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
-  const { site } = useStaticQuery(
+function SEO({ lang, title }) {
+  const data = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
+        seo: file(relativePath: {eq: "seo.md"}) {
+          childMarkdownRemark {
+            frontmatter {
+              open_graph {
+                description
+                image
+                keywords
+                title
+                url
+              }
+              twitter {
+                author
+                description
+                title
+                user_name
+              }
+            }
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const { open_graph, twitter } = data.seo.childMarkdownRemark.frontmatter;
+  let meta = []
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={open_graph.title}
+      titleTemplate={`%s | ${title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: open_graph.description,
         },
         {
           property: `og:title`,
-          content: title,
+          content: open_graph.title,
+        },
+        {
+          property: `og:site_name`,
+          content: open_graph.title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: open_graph.description,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: 'website',
+        },
+        {
+          property: `og:url`,
+          content: open_graph.url,
         },
         {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          name: `twitter:title`,
+          content: twitter.title,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          name: `twitter:creator`,
+          content: twitter.author,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: twitter.description,
+        },
+        {
+          name: `twitter:site`,
+          content: twitter.user_name,
+        },
+        {
+          name: `twitter:image`,
+          content: twitter.image,
         },
       ]
         .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
+          {
+            name: `keywords`,
+            content: open_graph.keywords,
+          }
         )
         .concat(meta)}
     />
@@ -83,17 +103,12 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
-  keywords: [],
-  description: ``,
+  title: ` `
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

@@ -38,7 +38,7 @@ collections:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Description (between 2 and 4 sentences)", name: "description", widget: "string" }
             - { label: "Website URL", name: "url", widget: "string" }
-            - { label: "Tags (comma seperated with no blanks)", name: "tags", widget: "string" }
+            - { label: "Keywords (comma seperated with no blanks)", name: "keywords", widget: "string" }
             - { label: "Image (ratio approx 1.91:1, min 1200x630px, max 5MB)", name: "image", widget: "image" }
 
           - label: "Twitter Card Specific"
