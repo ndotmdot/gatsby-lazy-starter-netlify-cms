@@ -7,6 +7,11 @@ function SEO({ lang, title }) {
   const data = useStaticQuery(
     graphql`
       query {
+        site {
+          siteMetadata {
+            siteTitle
+          }
+        }
         seo: file(relativePath: {eq: "seo.md"}) {
           childMarkdownRemark {
             frontmatter {
@@ -30,7 +35,8 @@ function SEO({ lang, title }) {
     `
   )
 
-  const { open_graph, twitter } = data.seo.childMarkdownRemark.frontmatter;
+  const { open_graph, twitter } = data.seo.childMarkdownRemark.frontmatter
+  const { siteTitle } = data.site.siteMetadata
   let meta = []
 
   return (
@@ -38,7 +44,7 @@ function SEO({ lang, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={open_graph.title}
+      title={siteTitle}
       titleTemplate={`%s | ${title}`}
       meta={[
         {

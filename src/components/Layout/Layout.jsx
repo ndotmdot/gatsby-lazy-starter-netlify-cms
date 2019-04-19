@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Ticker from "components/Ticker/Ticker"
 import Header from "components/Header/Header"
 import Footer from "components/Footer/Footer"
 import "./Layout.css"
@@ -31,12 +30,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const { site, ticker } = data
+  const { site } = data
   const { menuLinks, siteTitle } = site.siteMetadata
 
   return (
     <React.Fragment>
-      <Ticker data={ticker} />
       <Header siteTitle={siteTitle} menuLinks={menuLinks}/>
       <main>
         {children}

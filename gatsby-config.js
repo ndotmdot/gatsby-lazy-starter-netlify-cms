@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: "Marc Thalberg",
+    siteTitle: "Lazy Starter",
     menuLinks:[
       {
-        name: 'Info',
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'About',
         link: '/about'
       },
       {
-        name: 'Kontakt',
+        name: 'Contact',
         link: '/contact'
-      },
-      {
-        name: 'Arbeiten',
-        link: '/'
       },
     ]
   },
