@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Marc Thalberg`,
-    description: `Starter`,
-    author: `Niklas May`,
+    siteTitle: "Marc Thalberg",
     menuLinks:[
       {
         name: 'Info',

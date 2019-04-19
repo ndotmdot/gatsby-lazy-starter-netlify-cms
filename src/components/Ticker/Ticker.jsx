@@ -23,11 +23,11 @@ const Ticker = (props) => {
         <div className="col-12 ticker font-mono">
           <marquee className="" direction="left" width="100%" scrollamount="4">
             {
-              messages.map(message => {
+              messages.map((message, index) => {
                 const { description, link } = message
-                const key = Date.now() + description + link + Math.random()
+                const key = index + Math.random()
                 if(link) {
-                  return <p><a href={link} key={key}>{description}</a></p>
+                  return <p key={key}><a href={link}>{description}</a></p>
                 }else 
                 {
                   return <p key={key}>{description}</p>

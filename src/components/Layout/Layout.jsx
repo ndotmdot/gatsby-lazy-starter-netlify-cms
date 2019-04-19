@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -16,10 +9,10 @@ import "./Layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query layoutQuery {
       site {
         siteMetadata {
-          title
+          siteTitle,
           menuLinks {
             name
             link
@@ -39,16 +32,16 @@ const Layout = ({ children }) => {
     }
   `)
   const { site, ticker } = data
-  const { menuLinks, title } = site.siteMetadata
+  const { menuLinks, siteTitle } = site.siteMetadata
 
   return (
     <React.Fragment>
       <Ticker data={ticker} />
-      <Header siteTitle={title} menuLinks={menuLinks}/>
+      <Header siteTitle={siteTitle} menuLinks={menuLinks}/>
       <main>
         {children}
       </main>
-      <Footer siteTitle={title} />
+      <Footer siteTitle={siteTitle} />
     </React.Fragment>
   )
 }

@@ -36,7 +36,7 @@ const BasicSwiper = (props) => {
         {
           images.map(image => {
             return (
-              <span key={image.childImageSharp.fixed.src}>
+              <span key={image.childImageSharp.fixed.src + Math.random()}>
                 <img src={image.childImageSharp.fixed.src} alt=" "/>
               </span>
             )

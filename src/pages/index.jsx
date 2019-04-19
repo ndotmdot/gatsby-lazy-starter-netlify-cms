@@ -17,11 +17,6 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     gallery: file(relativePath: {eq: "home-gallery.md"}) {
       childMarkdownRemark {
         frontmatter {
