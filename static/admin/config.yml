@@ -24,7 +24,7 @@ collections:
     format: "frontmatter"
     extension: "md"
     editor:
-      preview: true
+      preview: false
     delete: false
     files:
       - name: "SEO"
@@ -56,7 +56,7 @@ collections:
     format: "frontmatter"
     extension: "md"
     editor:
-      preview: true
+      preview: false
     delete: false
     files:
       - name: "home-gallery"
