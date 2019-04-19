@@ -19,12 +19,6 @@ module.exports = {
     ]
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/preview-templates/index.js`,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-module-resolver',
@@ -132,6 +126,7 @@ module.exports = {
         precision: 8,
       },
     },
+    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-netlify`,
       options: {

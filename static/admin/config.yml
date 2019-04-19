@@ -19,6 +19,38 @@ collections:
       - { label: "Description", name: "description", widget: string }
       - { label: "Body", name: "body", widget: markdown }
       - { label: "Image", name: "image", widget: image }
+  - label: "Settings"
+    name: "settings"
+    format: "frontmatter"
+    extension: "md"
+    editor:
+      preview: true
+    delete: false
+    files:
+      - name: "SEO"
+        label: "Search Engine Optimization"
+        file: /static/content/settings/seo.md
+        fields:
+          - label: "Open Graph (google, facebook)"
+            name: "open-graph"
+            widget: "object" 
+            fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Description (between 2 and 4 sentences)", name: "description", widget: "string" }
+            - { label: "Website URL", name: "url", widget: "string" }
+            - { label: "Image (ratio approx 1.91:1, min 1200x630px, max 5MB)", name: "image", widget: "image" }
+            - { label: "Tags (seperated by ",", no blanks)", name: "description", widget: "string" }
+
+          - label: "Twitter Card Specific"
+            name: "twitter"
+            widget: "object" 
+            fields:
+            - { label: "Title (max 70 characters)", name: "title", widget: "string" }
+            - { label: "Author", name: "author", widget: "string" }
+            - { label: "Twitter Username", name: "user-name", widget: "string" }
+            - { label: "Description (max 200 characters)", name: "description", widget: "string" }
+            - { label: "Image (ratio 1:1, min 144x144px, max 4096x4096px, 5MB)", name: "image", widget: "image" }
+
   - label: "Pages"
     name: "pages"
     format: "frontmatter"
