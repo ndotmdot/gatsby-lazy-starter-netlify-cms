@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Swiper from 'react-id-swiper';
+import Swiper from 'react-id-swiper/lib/ReactIdSwiper.full';
 import classNames from 'classnames'
+import Img from "gatsby-image/withIEPolyfill"
 import "./BasicSwiper.scss"
 
 const BasicSwiper = (props) => {
@@ -9,11 +10,15 @@ const BasicSwiper = (props) => {
   const [ swiper, updateSwiper ] = useState(null)
   const [ pagination, setPagination ] = useState(1)
   const params = {
-    speed: 400,
+    speed: 500,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: true,
+    },
     spaceBetween: 0,
+    loopedSlides: images.length * 2,
     slidesPerView: 1,
     loop: true,
-    grabCursor: true,
     lazy: true,
     getSwiper: updateSwiper,
   }
@@ -31,7 +36,7 @@ const BasicSwiper = (props) => {
       <div className="info">
         {title &&
           <span className="title bold"><p>{title}</p></span>
-        },
+        }
         {showPagination &&
           <span className="pagination"><p>{pagination}</p></span>
         }
@@ -40,8 +45,8 @@ const BasicSwiper = (props) => {
         {
           images.map(image => {
             return (
-              <span key={image.childImageSharp.fixed.src + Math.random()}>
-                <img src={image.childImageSharp.fixed.src} alt=" "/>
+              <span key={image.childImageSharp.fluid.src + Math.random()}>
+                <Img fluid={image.childImageSharp.fluid} critical fadeIn={false} objectFit="cover" />
               </span>
             )
           })

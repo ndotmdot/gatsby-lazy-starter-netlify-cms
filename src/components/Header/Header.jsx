@@ -9,7 +9,7 @@ const Header = ({ siteTitle, menuLinks}) => {
 
 
   return (
-    <header >
+    <header>
       <Location>
         {
           locationProps =>  (

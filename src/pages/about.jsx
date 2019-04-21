@@ -4,12 +4,13 @@ import { SEO } from "utilities"
 import { RowFixed } from 'elements'
 
 export default ({ data }) => {
-  const { title, html } = data.about.childMarkdownRemark;
+  const { html } = data.about.childMarkdownRemark;
+  const { title } = data.about.childMarkdownRemark.frontmatter;
 
   return(
     <React.Fragment>
       <SEO title="Info" lang="de" />
-      <RowFixed>
+      <RowFixed classes="py-3">
         <div className="col-sm-3">
         <p>{title}</p>
         </div>

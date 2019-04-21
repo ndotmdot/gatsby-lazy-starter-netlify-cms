@@ -1,5 +1,6 @@
 @import '../../scss/styles.scss';
 
 footer {
-  padding-top: $spacer * 3;
+  padding-bottom: $spacer / 2;
+  z-index: $z-index-plus-plus;
 }

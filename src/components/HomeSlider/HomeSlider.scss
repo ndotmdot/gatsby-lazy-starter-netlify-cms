@@ -1,0 +1,13 @@
+@import '../../scss/styles.scss';
+
+.home-slider {
+  margin-top: 38vh;
+  
+  .swiper-slide {
+    height: 62vh;
+
+    .gatsby-image-wrapper {
+      min-height: 100%;
+    }
+  }
+}

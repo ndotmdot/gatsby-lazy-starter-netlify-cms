@@ -1,7 +1,12 @@
 @import '../../scss/styles.scss';
 
 header {
-  padding-bottom: $spacer * 3;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: $z-index-plus-plus;
+  padding-top: $spacer / 2;
 
   p {
     display: inline;
@@ -12,7 +17,7 @@ header {
     display: inline;
     
     p {
-      padding-left: 20px;
+      padding-left: $spacer;
     }
   }
 

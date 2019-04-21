@@ -139,7 +139,7 @@ $container-fixed-max-wdith: 5000px;
 $enable-grid-classes: true;
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           $spacer !default;
 
 
 
@@ -158,6 +158,10 @@ $font-size-sm:                $font-size-base * .875 !default;
 
 
 $font-line-height-base:            1.35 !default;
+
+// Utilities
+
+$z-index-plus-plus: 10;
 
 // Utilities
 

@@ -21,11 +21,9 @@ export const query = graphql`
       childMarkdownRemark {
         frontmatter {
           slider {
-            images {
-              childImageSharp {
-                fixed(width: 600) {
-                  ...GatsbyImageSharpFixed
-                }
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }
