@@ -66,7 +66,7 @@ collections:
           - label: "Slider"
             name: "slider"
             widget: "list"
-            field: { label: "Image", name: "image", widget: "image"}
+            field: { label: "Slide", name: "slide", widget: "image"}
       - name: "about"
         label: "About "
         file: /static/content/pages/about.md
