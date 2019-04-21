@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-lazy-starter-netlify-cms",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Niklas May <hello@niklasmay.com>",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.3.3",

@@ -1,27 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
-import ProjectGallery from "components/ProjectGallery/ProjectGallery"
+import HomeSlider from "components/HomeSlider/HomeSlider"
 import { SEO } from "utilities"
 import "scss/styles.scss"
 
 export default ({ data }) => {
-  const { gallery } = data
+  const { home } = data
 
   return (
     <React.Fragment>
       <SEO title="Arbeiten" lang="de" />
-      <ProjectGallery data={gallery} />
+      <HomeSlider data={home} />
     </React.Fragment>
   )
 }
 
 export const query = graphql`
   query {
-    gallery: file(relativePath: {eq: "home-gallery.md"}) {
+    home: file(relativePath: {eq: "home.md"}) {
       childMarkdownRemark {
         frontmatter {
-          projects {
-            title
+          slider {
             images {
               childImageSharp {
                 fixed(width: 600) {

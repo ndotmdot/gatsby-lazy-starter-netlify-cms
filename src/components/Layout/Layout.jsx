@@ -18,16 +18,6 @@ const Layout = ({ children }) => {
           }
         }
       }
-      ticker: file(relativePath: {eq: "home-ticker.md"}) {
-        childMarkdownRemark {
-          frontmatter {
-            items {
-              description
-              link
-            }
-          }
-        }
-      }
     }
   `)
   const { site } = data

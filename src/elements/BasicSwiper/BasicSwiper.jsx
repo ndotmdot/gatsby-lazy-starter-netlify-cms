@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import "./BasicSwiper.scss"
 
 const BasicSwiper = (props) => {
-  const { images, title, classes } = props
+  const { images, title, showPagination, classes } = props
 
   const [ swiper, updateSwiper ] = useState(null)
   const [ pagination, setPagination ] = useState(1)
@@ -29,8 +29,12 @@ const BasicSwiper = (props) => {
   return (
     <div className={classNames("swiper", classes)} >
       <div className="info">
-        <span className="title bold"><p>{title}</p></span>
-        <span className="pagination"><p>{pagination}</p></span>
+        {title &&
+          <span className="title bold"><p>{title}</p></span>
+        },
+        {showPagination &&
+          <span className="pagination"><p>{pagination}</p></span>
+        }
       </div>
       <Swiper {...params}>
         {
