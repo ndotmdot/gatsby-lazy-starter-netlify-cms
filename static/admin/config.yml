@@ -62,7 +62,7 @@ collections:
       - name: "home"
         label: "Home"
         file: /static/content/pages/home.md
-        fields:
+        field:
           - label: "Slider"
             name: "slider"
             widget: "list"
