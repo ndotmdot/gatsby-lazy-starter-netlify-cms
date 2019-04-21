@@ -65,12 +65,8 @@ collections:
         fields:
           - label: "Slider"
             name: "slider"
-            widget: "list" 
-            fields: 
-              - label: "Images"
-                name: "images"
-                widget: "list"
-                field: { label: "Image", name: "image", widget: "image"}
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image"}
       - name: "about"
         label: "About "
         file: /static/content/pages/about.md
