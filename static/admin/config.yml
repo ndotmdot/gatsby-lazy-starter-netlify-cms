@@ -73,5 +73,6 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "body", widget: "markdown" }
+          
 
 
